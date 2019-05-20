@@ -10,7 +10,7 @@ phoenix:
 
 
 import:
-  tablename: C2019_000000_SD601_11
+  tablename: test
   batchsize: 10000
 
 
