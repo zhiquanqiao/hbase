@@ -39,7 +39,7 @@ public class PhoenixDao {
         if (tableValue != null && tableValue.size() > 0) {
             StringBuffer sqlBuffer = new StringBuffer();
             StringBuffer valueBuffer = new StringBuffer();
-            sqlBuffer.append("upsert into C2019_000000_SD601_11_NEW (");
+            sqlBuffer.append("upsert into "+tableName+"(");
             valueBuffer.append(" values (");
             for (int i = 0; i < tableValue.size(); i++) {
                 if (i > 0) {
