@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+}
+
+group 'com.kteck'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+//    mavenCentral()
+    maven { url "http://central.maven.org/maven2/" }
+    maven { url "http://repo.spring.io/plugins-release/" }
+}
+
+dependencies {
+    compile group: 'org.yaml', name: 'snakeyaml', version: '1.23'
+    compile group: 'com.oracle', name: 'ojdbc6', version: '11.2.0.3'
+    compile('org.apache.phoenix:phoenix-core:4.14.1-HBase-1.2'){
+        exclude group: 'com.google.guava'
+    }
+    compile group: 'com.google.guava', name: 'guava', version: '16.0'
+
+
+}

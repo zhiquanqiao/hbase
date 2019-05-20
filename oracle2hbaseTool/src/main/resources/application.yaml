@@ -1,0 +1,19 @@
+oracle:
+  url: jdbc:oracle:thin:@locahost:7706:rkpc
+  username: cjcl
+  password: 11111111
+  driverClassName: oracle.jdbc.driver.OracleDriver
+
+phoenix:
+  url: jdbc:phoenix:localhost:2181
+  driverClassName: org.apache.phoenix.jdbc.PhoenixDriver
+
+
+import:
+  tablename: C2019_000000_SD601_11
+  batchsize: 10000
+
+
+thread:
+  core: 5
+  max: 8
